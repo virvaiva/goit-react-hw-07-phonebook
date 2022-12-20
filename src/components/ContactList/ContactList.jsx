@@ -12,7 +12,9 @@ export const ContactList = () => {
   const dispatch = useDispatch();
   const onDeleteContact = id => dispatch(deleteContacts(id));
   const contacts = useSelector(getVisibleContacts);
-  useEffect(() => dispatch(fetchContacts()), [dispatch]);
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
   return (
     <ListUl>
       {contacts.map(({ id, name, phone }) => (
