@@ -1,7 +1,7 @@
 import { Contact } from './Contacts/Contacts';
 import { Section } from './Section/Section';
 import { Filter } from './Filter/Filter';
-import { BlockContact } from './BlockContact/BlockContact';
+import { ContactList } from './ContactList/ContactList';
 
 export function App() {
   return (
@@ -19,7 +19,7 @@ export function App() {
       </Section>
       <Section title="Contacts">
         <Filter />
-        <BlockContact />
+        <ContactList />
       </Section>
     </div>
   );
